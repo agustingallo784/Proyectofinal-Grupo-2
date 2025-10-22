@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'Origin Athletic';
+  src: url('./fonts/Origin Athletic TTF.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+.custom-navbar {
+  background-color: #1c1c1c !important;
+  font-family: 'Origin Athletic', sans-serif;
+  height: 85px;
+  padding: 4px 8% !important;
+
+  z-index: 1050;
+}
+
+.navbar-brand img {
+  height: 88px;
+  width: auto;
+  transition: all 0.5s;
+  margin-right: 20px;
+}
+
+.navbar-brand img:hover {
+  transform: scale(1.05);
+}
+
+
+.navbar-nav .nav-link {
+  color: #eceff1 !important;
+  font-weight: 700;
+  padding: 0 20px !important;
+  transition: all 0.3s;
+  position: relative;
+  text-decoration: none;
+
+}
+
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #D9A300, #FFD700);
+  transition: all 0.3s;
+  transform: translateX(-50%);
+
+}
+
+.navbar-nav .nav-link:hover {
+  color: #D9A300 !important;
+  transform: scale(1.1);
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 80%;
+}
+
+.navbar-nav .nav-link.active {
+  color: #D9A300 !important;
+  font-weight: 900;
+}
+
+
+.navbar-nav .nav-link.active::after {
+  width: 100%;
+  background: linear-gradient(90deg, #D9A300, #FFD700);
+}
+
+
+.custom-btn {
+  font-weight: 700;
+  color: #000000 !important;
+  padding: 12px 28px;
+  background: linear-gradient(135deg, #D9A300, #FFD700);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.custom-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+.custom-btn:hover {
+  background: #eceff1;
+  transform: scale(1.05);
+  color: #1c1c1c !important;
+}
+
+.custom-btn:hover::before {
+  left: 100%;
+}
+
+
+.navbar-toggler {
+  border: 2px solid #D9A300 !important;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background-color: rgba(217, 163, 0, 0.1) !important;
+  transition: all 0.3s;
+}
+
+.navbar-toggler:hover {
+  background-color: rgba(217, 163, 0, 0.2) !important;
+  transform: scale(1.05);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23D9A300' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28217,163,0,1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  width: 24px;
+  height: 24px;
+}
+
+.navbar-collapse {
+  background-color: #1c1c1c;
+  border-radius: 0 0 10px 10px;
+  padding: 15px;
+  transition: all 0.3s ease;
+}
+
+.navbar-collapse.show {
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
