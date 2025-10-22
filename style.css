@@ -1,0 +1,164 @@
+.hero-section {
+  padding-top: 85px;
+  padding-bottom: 60px;
+  background-color: #1c1c1c;
+}
+
+.carousel-container {
+  max-width: 90%;
+  margin: 0 auto;
+  background: rgba(28, 28, 28, 0.8);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.carousel {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.carousel-item {
+  transition: transform 0.6s ease-in-out;
+}
+
+.carousel-image-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 40.25%;
+}
+
+.carousel-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.carousel-item:hover .carousel-img {
+  transform: scale(1.05);
+}
+
+.carousel-caption {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-6%);
+  background: rgba(0, 0, 0, 0.6);
+  color: #FFD700;
+  padding: 1rem;
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  font-family: 'Origin Athletic', sans-serif;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  width: fit-content;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.carousel-item:hover .carousel-caption {
+  opacity: 1;
+}
+
+.carousel-caption h5 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.carousel-caption p {
+  font-size: 1.1rem;
+  color: #eceff1;
+  margin-bottom: 0;
+}
+
+@media (max-width: 991.98px) {
+  .custom-navbar {
+    height: auto;
+    padding: 4px 4% !important;
+  }
+
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 15px 0 !important;
+    border-bottom: 1px solid rgba(217, 163, 0, 0.2);
+    font-size: 1rem;
+  }
+
+  .custom-btn {
+    margin-top: 15px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .carousel-container {
+    max-width: 95%;
+    padding: 15px;
+  }
+
+  .carousel-image-container {
+    padding-bottom: 75%;
+  }
+
+  .carousel-caption {
+    padding: 0.8rem 1.2rem;
+    font-size: 0.9rem;
+    bottom: 15%;
+  }
+
+  .carousel-caption h5 {
+    font-size: 1.4rem;
+  }
+
+  .carousel-caption p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-brand img {
+    height: 60px;
+    margin-right: 10px;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 0.9rem;
+  }
+
+  .custom-btn {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+  }
+
+  .carousel-container {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .carousel-image-container {
+    padding-bottom: 100%;
+  }
+
+  .carousel-caption {
+    padding: 0.6rem 1rem;
+    font-size: 0.8rem;
+    bottom: 10%;
+  }
+
+  .carousel-caption h5 {
+    font-size: 1.2rem;
+  }
+
+  .carousel-caption p {
+    font-size: 0.8rem;
+  }
+}
