@@ -6,31 +6,77 @@
   <meta name="author" content="Grupo 2">
   <meta name="description" content="Proyecto: LandingPage Gimnasio">
   <meta name="keywords" content="HTML, CSS,JavaScript">
-  <link rel="stylesheet" href="style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
   <link rel="icon" type="image" href="./img/logoflexgym.jpg" />
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FLEX FITNESS GYM</title>
 </head>
 
 <body>
-  <header class="header">
-    <div class="logo">
-      <img src="/img/logo.jpg" alt="Logo del gimnasio">
+  <header class="navbar navbar-expand-lg custom-navbar fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="img/logo - copia.jpg" alt="Logo Flex Fitness">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#planes">Planes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#clientes">Nuestros clientes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#redes">Redes</a></li>
+        </ul>
+        <div class="d-flex">
+          <a href="#" class="custom-btn">
+            <i class="fas fa-fire me-2"></i> Probá tu primer clase gratis, hoy!
+          </a>
+        </div>
+      </div>
     </div>
-    <ul class="navbar">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Planes</a></li>
-      <li><a href="#">Servicios</a></li>
-      <li><a href="#">Nuestros clientes</a></li>
-      <li><a href="#">Redes</a></li>
-    </ul>
-    <a href="#" class="btn"><button>Probá tu primer clase gratis, hoy!</button></a>
   </header>
 
+  <span class="container">
+    <div class="row align-items-center">
+      <div class="col-md-5">
+        <section>
+          <div class="content-wrapper">
+            <h1>¿POR QUÉ ELEGIRNOS?</h1>
+            <h2>Activa tu mejor versión<br>estamos listos para vos</h2>
+            <p>
+              &nbsp;&nbsp;&nbsp;&nbsp;Nuestro enfoque emocional y nuestra instalación<br>
+              están pensadas para acompañarte en cada paso.<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;Creamos espacios que inspiran, motivan y te conectan con tu propósito.
+            </p>
+            <button class="btn-custom">EMPEZÁ AHORA!</button>
+          </div>
+        </section>
+      </div>
 
-    <section>
+      <div class="col-md-7">
+        <figure>
+          <video autoplay muted loop playsinline>
+            <source src="video/FlexGym.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+          </video>
+        </figure>
+      </div>
+    </div>
+  </span>
+  <!-- <section>
         <form>
             <h2>FORMULARIO</h2>
 
@@ -45,119 +91,331 @@
 
             <button type="submit">Enviar</button>
         </form>
+    </section> -->
+
+
+  <main id="home">
+    <section class="hero-section">
+      <div class="carousel-container">
+        <div id="carruselImagenes" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carruselImagenes" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carruselImagenes" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carruselImagenes" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carruselImagenes" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carruselImagenes" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="carousel-image-container">
+                <img src="./carrusel/2x1.png" class="d-block w-100 carousel-img" alt="Entrena con un amigo"
+                  loading="lazy">
+                <div class="carousel-caption">
+                  <h5>Entrena con un amigo!</h5>
+                  <p>Energía y motivación en equipo.</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-image-container">
+                <img src="./carrusel/ActFit.png" class="d-block w-100 carousel-img" alt="Actitud FIT" loading="lazy">
+                <div class="carousel-caption">
+                  <h5>Actitud FIT!</h5>
+                  <p>Transformá tu rutina en un estilo de vida.</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-image-container">
+                <img src="./carrusel/AsistPerfecta.png" class="d-block w-100 carousel-img"
+                  alt="Premiacion a la disciplina" loading="lazy">
+                <div class="carousel-caption">
+                  <h5>Premiacion a la disciplina!</h5>
+                  <p>Reconocemos tu constancia y esfuerzo.</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-image-container">
+                <img src="./carrusel/primerclase.png" class="d-block w-100 carousel-img" alt="Primera clase gratis"
+                  loading="lazy">
+                <div class="carousel-caption">
+                  <h5>Primera Clase Gratis</h5>
+                  <p>¡Probá sin compromiso y descubrí tu lugar!</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-image-container">
+                <img src="./carrusel/sociosactivos.png" class="d-block w-100 carousel-img" alt="Comunidad activa"
+                  loading="lazy">
+                <div class="carousel-caption">
+                  <h5>Comunidad Activa</h5>
+                  <p>Sumate a un equipo que te impulsa.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carruselImagenes" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carruselImagenes" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
     </section>
 
 
-    <section >
-      <h1>¿Por qué elegirnos?</h1>
-      <h2>Activa tu mejor versión, estamos listos para vos</h2>
-      <p>
-      Nuestro enfoque emocional y nuestra instalación <br>
-      están pensadas para acompañarte en cada paso. <br>
-      Creamos espacios que inspiran, motivan y te conectan con tu propósito.
-      </p>
-      <button>EMPEZA AHORA!</button>
-    </section>
-    
-    <figure>
-      <video autoplay muted loop>
-      <source src="video/v-gym.mp4" type="video/mp4">
-      </video>
-    </figure>
+  </main>
 
-  <section actividades>
-    <article>
-      <figure>
-        <img src="img/musculacion.jpg" alt="Musculación">
-        <figcaption>
-          <h3>Musculación</h3>
-          <a href="#">Ver más</a>
-        </figcaption>
-      </figure>
-    </article>
+  <section id="disciplinas">
+    <div class="container">
+      <div class="disciplinas-header">
+        <h2>Nuestras Disciplinas</h2>
+        <p>Más que ejercicios, nuestras disciplinas son espacios para crecer y superarte junto a una comunidad que te
+          acompaña.</p>
+      </div>
 
-    <article>
-      <figure>
-        <img src="img/cardio.jpg" alt="Cardio">
-        <figcaption>
-          <h3>Cardio</h3>
-          <a href="#">Ver más</a>
-        </figcaption>
-      </figure>
-    </article>
+      <div class="row disciplinas-container">
+        <div class="col-lg-4 col-md-6">
+          <div class="discipline-card cardio">
+            <div class="discipline-bg"></div>
+            <div class="discipline-content">
+              <div>
+                <div class="discipline-icon">
+                  <i class="fas fa-heartbeat"></i>
+                </div>
+              </div>
+              <div>
+                <h3 class="discipline-title">Cardio</h3>
+                <div class="discipline-info">
+                  <p class="discipline-description">
+                    Quema calorías, mejora tu resistencia y fortalece tu corazón con nuestras rutinas cardiovasculares
+                    dinámicas.
+                  </p>
+                  <ul class="discipline-features">
+                    <li><i class="fas fa-check-circle"></i> Cintas y elípticas de última generación</li>
+                    <li><i class="fas fa-check-circle"></i> Clases de funcional</li>
+                    <li><i class="fas fa-check-circle"></i> Entrenamiento HIIT personalizado</li>
+                  </ul>
 
-    <article>
-      <figure>
-        <img src="img/grupal.jpg" alt="Clases grupales">
-        <figcaption>
-          <h3>Clases grupales</h3>
-          <a href="#">Ver más</a>
-        </figcaption>
-      </figure>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="discipline-card musculacion">
+            <div class="discipline-bg"></div>
+            <div class="discipline-content">
+              <div>
+                <div class="discipline-icon">
+                  <i class="fas fa-dumbbell"></i>
+                </div>
+              </div>
+              <div>
+                <h3 class="discipline-title">Musculación</h3>
+                <div class="discipline-info">
+                  <p class="discipline-description">
+                    Desarrolla fuerza, tonifica y construye masa muscular con equipamiento profesional y asesoramiento
+                    experto.
+                  </p>
+                  <ul class="discipline-features">
+                    <li><i class="fas fa-check-circle"></i> Máquinas y pesas libres profesionales</li>
+                    <li><i class="fas fa-check-circle"></i> Planes de entrenamiento personalizados</li>
+                    <li><i class="fas fa-check-circle"></i> Instructores certificados disponibles</li>
+                  </ul>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="discipline-card clases">
+            <div class="discipline-bg"></div>
+            <div class="discipline-content">
+              <div>
+                <div class="discipline-icon">
+                  <i class="fas fa-users"></i>
+                </div>
+              </div>
+              <div>
+                <h3 class="discipline-title">Clases Grupales</h3>
+                <div class="discipline-info">
+                  <p class="discipline-description">
+                    Entrena con energía y motivación en grupo. Funcional, HIIT y más disciplinas para todos los
+                    niveles.
+                  </p>
+                  <ul class="discipline-features">
+                    <li><i class="fas fa-check-circle"></i> Variedad de horarios y disciplinas</li>
+                    <li><i class="fas fa-check-circle"></i> Instructores motivadores y profesionales</li>
+                    <li><i class="fas fa-check-circle"></i> Ambiente de comunidad y apoyo</li>
+                  </ul>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews-section">
+    <article class="container-fluid">
+      <article class="grey-container">
+        <header class="title-container">
+          <h2 class="reviews-title">LO QUE DICEN NUESTROS USUARIOS</h2>
+          <figure class="discipline-icon">
+            <i class="bi bi-emoji-smile-fill"></i>
+          </figure>
+        </header>
+
+        <section class="row g-4">
+          <article class="col-12 col-md-6 col-lg-3">
+            <div class="card review-card">
+              <div class="card-body">
+                <aside class="stars">
+                  <i class="bi bi-star-fill star"></i>
+                  <i class="bi bi-star-fill star"></i>
+                  <i class="bi bi-star-fill star"></i>
+                  <i class="bi bi-star-fill star"></i>
+                  <i class="bi bi-star-fill star"></i>
+                </aside>
+                <h3 class="user-name card-title">Victor M.</h3>
+                <p class="review-text card-text">El staff de FLEXGYM siempre está motivándote y comentando tu
+                  entrenamiento. Elegís tu rutina según tus objetivos. Excelente ambiente!</p>
+                <a href="#" class="instagram-icon" aria-label="Instagram de Victor M.">
+                  <i class="bi bi-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="col-12 col-md-6 col-lg-3">
+            <div class="card review-card">
+              <div class="card-body">
+                <aside class="stars">
+                  <i class="bi bi-star-fill star"></i>
+                  <i class="bi bi-star-fill star"></i>
+                  <i class="bi bi-star-fill star"></i>
+                  <i class="bi bi-star-fill star"></i>
+                  <i class="bi bi-star-fill star"></i>
+                </aside>
+                <h3 class="user-name card-title">Agustin G.</h3>
+                <p class="review-text card-text">Amo FLEXGYM por los entrenadores increíbles. Me ayudaron a conseguir el
+                  cuerpo que quiero. Soy muy feliz entrenando aquí!</p>
+                <a href="#" class="instagram-icon" aria-label="Instagram de Agustin G.">
+                  <i class="bi bi-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="col-12 col-md-6 col-lg-3">
+            <div class="card review-card">
+              <div class="card-body">
+                <aside class="stars">
+                  <i class="bi bi-star-fill star"></i>
+                  <i class="bi bi-star-fill star"></i>
+                  <i class="bi bi-star-fill star"></i>
+                  <i class="bi bi-star-fill star"></i>
+                  <i class="bi bi-star-fill star"></i>
+                </aside>
+                <h3 class="user-name card-title">Carlos A.</h3>
+                <p class="review-text card-text">¡El lugar más increíble para entrenar! Rutinas espectaculares e
+                  instructores excelentes. No lo pienses dos veces, ¡solo ve!</p>
+                <a href="#" class="instagram-icon" aria-label="Instagram de Carlos A.">
+                  <i class="bi bi-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="col-12 col-md-6 col-lg-3">
+            <div class="card review-card">
+              <div class="card-body">
+                <aside class="stars">
+                  <i class="bi bi-star-fill star"></i>
+                  <i class="bi bi-star-fill star"></i>
+                  <i class="bi bi-star-fill star"></i>
+                  <i class="bi bi-star-fill star"></i>
+                  <i class="bi bi-star-fill star"></i>
+                </aside>
+                <h3 class="user-name card-title">Nicolas N.</h3>
+                <p class="review-text card-text">Entreno hace 3 años y me siento una más. Los profes y personas son
+                  increíbles. Voy 3 veces por semana y me suben el ánimo. Lo mejor!</p>
+                <a href="#" class="instagram-icon" aria-label="Instagram de Nicolas N.">
+                  <i class="bi bi-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+        </section>
+      </article>
     </article>
   </section>
 
 
-  <section>
-    <h2>RESEÑAS</h2>
-    <article>
-      <img src="imgre/clasificacion.png" alt="Ícono de red social">
-      <h3>Nicolas</h3>
-      <p>“Excelente ambiente y entrenadores súper atentos.</p>
-      <p>¡Me siento motivado cada día!”</p>
-      <img src="imgre/Icono-insta.png" alt="Ícono de red social">
-    </article>
+  <a href="https://wa.me/+5493865690260" target="_blank" rel="noopener noreferrer" aria-label="Botón de WhatsApp"
+    class="whatsapp-btn">
+    <ion-icon name="logo-whatsapp"></ion-icon>
+  </a>
 
-    <article>
-      <img src="imgre/clasificacion.png" alt="Ícono de red social">
-      <h3>Roque</h3>
-      <p>Instalaciones impecables </p>
-      <p>rutinas bien personalizadas</p>
-      <img src="imgre/Icono-insta.png" alt="Ícono de red social">
-    </article>
+  <footer class="footer">
+    <section class="footer-logo">
+      <a href="#" class="logo-link">
+        <img src="img/logo_-_copia-removebg-preview.png" alt="FLEX Fitness & Gym">
+      </a>
+    </section>
 
-    <article>
-      <img src="imgre/clasificacion.png" alt="Ícono de red social">
-      <h3>Adolfo</h3>
-      <p>Recomendadísimo!</p>
-      <img src="imgre/Icono-insta.png" alt="Ícono de red social">
-    </article>
-  </section>
+    <section class="footer-location">
+      <h3 class="location-title">Ubicación</h3>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2960.1230063578682!2d-65.61716059999999!3d-27.435563599999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9423c5690517503f%3A0xafb7db59b2058335!2sFLEX%20Gym%20%26%20Fitness!5e1!3m2!1ses-419!2sar!4v1760546427174!5m2!1ses-419!2sar"
+        class="location-map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </section>
 
-  <footer>
-    <table width="100%">
-      <td width="30%" valign="top">
-        <a href="#">
-          <img src="imagen/WhatsApp Image 2025-09-24 at 10.34.09 AM.jpeg" alt="FLEX-GYM" width="200"><br>
+    <section class="footer-contact">
+      <h3 class="contact-title">Contáctanos</h3>
+      <p class="contact-item">
+        <a href="tel:‪+5493865690260‬" class="contact-item">
+          <i class="bi bi-telephone-fill contact-icon telefono-icon"></i> ‪+54 9 3865 690260‬
         </a>
-      </td>
+      </p>
+      <p class="contact-item">
+        <i class="bi bi-envelope-fill contact-icon gmail-icon"></i> Gmail
+      </p>
+    </section>
 
-      <td width="30%" valign="top">
-        <h2>Ubicación</h2>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!4v1758736886507!6m8!1m7!1sRrBBxHYQ3OiL1SX_O-aQMgA!2m2!1d-27.43555055433153!2d-65.6170910152433!3f260.6053081960038!4f3.815034730287678!5f0.7820865974627469"
-          width="65%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-      </td>
+    <nav class="footer-social">
+      <h3 class="social-title">Redes</h3>
+      <a href="#" class="social-icon">
+        <i class="bi bi-facebook facebook-icon"></i> Facebook
+      </a>
+      <a href="#" class="social-icon">
+        <i class="bi bi-instagram instagram-icon"></i> Instagram
+      </a>
+    </nav>
 
-      <td width="20%" valign="top">
-        <h2>Contactanos</h2>
-        <p><img src="imagen/icons8-phone-48.png" alt="Celular" width="15%">Celular</p>
-        <p><img src="imagen/icons8-gmail-logo-50.png" alt="Gmail" width="15%">Gmail</p>
-      </td>
-      <td width="30%" valign="top">
-        <h2>Redes</h2>
-        <p><img src="imagen/icons8-facebook-logo-50.png" alt="Facebook" width="30">Facebook</p>
-        <p><img src="imagen/icons8-instagram-logo-48.png" alt="Instagram" width="30">Instagram</p>
-        <p> <img src="imagen/icons8-tiktok-48.png" alt="TikTok" width="30">TikTok</p>
-      </td>
-    </table>
-    <center>
+    <section class="footer-copy">
       <p>© 2025 copyright: grupo 2 Concepción, Tucumán, Argentina</p>
-    </center>
+    </section>
   </footer>
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  
 </body>
 
 
