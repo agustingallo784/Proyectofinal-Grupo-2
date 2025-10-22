@@ -14,11 +14,10 @@
 
 
 .custom-navbar {
-  background-color: #1c1c1c !important;
+  background-color: #1c1c1c ;
   font-family: 'Origin Athletic', sans-serif;
   height: 85px;
-  padding: 4px 8% !important;
-
+  padding: 4px 8% ;
   z-index: 1050;
 }
 
@@ -35,9 +34,9 @@
 
 
 .navbar-nav .nav-link {
-  color: #eceff1 !important;
+  color: #eceff1 ;
   font-weight: 700;
-  padding: 0 20px !important;
+  padding: 0 20px ;
   transition: all 0.3s;
   position: relative;
   text-decoration: none;
@@ -58,7 +57,7 @@
 }
 
 .navbar-nav .nav-link:hover {
-  color: #D9A300 !important;
+  color: #D9A300 ;
   transform: scale(1.1);
 }
 
@@ -67,7 +66,7 @@
 }
 
 .navbar-nav .nav-link.active {
-  color: #D9A300 !important;
+  color: #D9A300 ;
   font-weight: 900;
 }
 
@@ -80,7 +79,7 @@
 
 .custom-btn {
   font-weight: 700;
-  color: #000000 !important;
+  color: #000000 ;
   padding: 12px 28px;
   background: linear-gradient(135deg, #D9A300, #FFD700);
   border: none;
@@ -107,7 +106,7 @@
 .custom-btn:hover {
   background: #eceff1;
   transform: scale(1.05);
-  color: #1c1c1c !important;
+  color: #1c1c1c ;
 }
 
 .custom-btn:hover::before {
@@ -116,15 +115,15 @@
 
 
 .navbar-toggler {
-  border: 2px solid #D9A300 !important;
+  border: 2px solid #D9A300 ;
   padding: 8px 12px;
   border-radius: 8px;
-  background-color: rgba(217, 163, 0, 0.1) !important;
+  background-color: rgba(217, 163, 0, 0.1) ;
   transition: all 0.3s;
 }
 
 .navbar-toggler:hover {
-  background-color: rgba(217, 163, 0, 0.2) !important;
+  background-color: rgba(217, 163, 0, 0.2) ;
   transform: scale(1.05);
 }
 
