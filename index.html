@@ -23,25 +23,26 @@
 </head>
 
 <body>
-  <header class="navbar navbar-expand-lg custom-navbar fixed-top">
-    <div class="container-fluid">
+  <header class="navbar navbar-expand-lg fixed-top bg-dark shadow-lg"
+    style="font-family: 'Origin Athletic', sans-serif;">
+    <div class="container-fluid px-3 px-lg-5">
       <a class="navbar-brand" href="#">
-        <img src="img/logo - copia.jpg" alt="Logo Flex Fitness">
+        <img src="img/logosinfondo.png" alt="Logo Flex Fitness" class="logo-img">
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#planes">Planes</a></li>
-          <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
-          <li class="nav-item"><a class="nav-link" href="#clientes">Nuestros clientes</a></li>
-          <li class="nav-item"><a class="nav-link" href="#redes">Redes</a></li>
+        <ul class="navbar-nav mx-auto text-center text-lg-start mb-3 mb-lg-0">
+          <li class="nav-item"><a class="nav-link text-light fw-bold" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-light fw-bold" href="#planes">Planes</a></li>
+          <li class="nav-item"><a class="nav-link text-light fw-bold" href="#servicios">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link text-light fw-bold" href="#clientes">Nuestros clientes</a></li>
+          <li class="nav-item"><a class="nav-link text-light fw-bold" href="#redes">Redes</a></li>
         </ul>
-        <div class="d-flex">
-          <a href="#" class="custom-btn">
+        <div class="d-flex justify-content-center">
+          <a href="#" class="custom-btn d-inline-block text-center">
             <i class="fas fa-fire me-2"></i> Probá tu primer clase gratis, hoy!
           </a>
         </div>
@@ -76,146 +77,126 @@
       </div>
     </div>
   </span>
-  
-<div class="modal-overlay"></div>
 
-<div class="modal-container">
+  <div class="modal-overlay"></div>
+
+  <div class="modal-container">
     <div class="form-card">
-        <button class="btn-close-modal" aria-label="Cerrar">×</button>
+      <button class="btn-close-modal" aria-label="Cerrar">×</button>
 
-        <h2 class="form-title">EMPEZA AHORA!</h2>
-        <div class="title-line"></div>
+      <h2 class="form-title">EMPEZA AHORA!</h2>
+      <div class="title-line"></div>
 
-        <form>
+      <form>
 
-            <div class="mb-custom">
-                <label for="nombre" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="nombre" placeholder="Ej. Nicolas">
-            </div>
+        <div class="mb-custom">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="nombre" placeholder="Ej. Nicolas">
+        </div>
 
-            <div class="mb-custom">
-                <label for="correo" class="form-label">Correo</label>
-                <input type="email" class="form-control" id="correo" placeholder="Ej.123@gmail.com">
-            </div>
+        <div class="mb-custom">
+          <label for="correo" class="form-label">Correo</label>
+          <input type="email" class="form-control" id="correo" placeholder="Ej.123@gmail.com">
+        </div>
 
-            <div class="mb-custom">
-                <label for="mensaje" class="form-label">Escribenos aquí</label>
-                <textarea class="form-control" id="mensaje" placeholder="Tu mensaje..."></textarea>
-            </div>
+        <div class="mb-custom">
+          <label for="mensaje" class="form-label">Escribenos aquí</label>
+          <textarea class="form-control" id="mensaje" placeholder="Tu mensaje..."></textarea>
+        </div>
 
-            <button type="submit" class="btn-submit">Enviar</button>
-        </form>
+        <button type="submit" class="btn-submit">Enviar</button>
+      </form>
     </div>
-</div>
+  </div>
 
 
-  <main id="home">
-    <section class="hero-section">
-      <div class="carousel-container">
-        <div id="carruselImagenes" class="carousel slide carousel-fade" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carruselImagenes" data-bs-slide-to="0" class="active"
-              aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carruselImagenes" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carruselImagenes" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carruselImagenes" data-bs-slide-to="3" aria-label="Slide 4"></button>
-            <button type="button" data-bs-target="#carruselImagenes" data-bs-slide-to="4" aria-label="Slide 5"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="carousel-image-container">
-                <img src="./carrusel/2x1.png" class="d-block w-100 carousel-img" alt="Entrena con un amigo"
-                  loading="lazy">
-                <div class="carousel-caption">
+  <main id="home" class="pt-5">
+    <section class="hero-section py-5">
+      <div class="container">
+        <div class="carousel-container mx-auto">
+          <div id="carruselImagenes" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carruselImagenes" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#carruselImagenes" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#carruselImagenes" data-bs-slide-to="2"></button>
+              <button type="button" data-bs-target="#carruselImagenes" data-bs-slide-to="3"></button>
+              <button type="button" data-bs-target="#carruselImagenes" data-bs-slide-to="4"></button>
+            </div>
+
+            <div class="carousel-inner rounded-3 overflow-hidden">
+              <div class="carousel-item active">
+                <img src="./carrusel/2x1.png" class="d-block w-100 carousel-img" alt="Entrena con un amigo">
+                <div class="carousel-caption-custom">
                   <h5>Entrena con un amigo!</h5>
                   <p>Energía y motivación en equipo.</p>
                 </div>
               </div>
-            </div>
-            <div class="carousel-item">
-              <div class="carousel-image-container">
-                <img src="./carrusel/ActFit.png" class="d-block w-100 carousel-img" alt="Actitud FIT" loading="lazy">
-                <div class="carousel-caption">
+              <div class="carousel-item">
+                <img src="./carrusel/ActFit.png" class="d-block w-100 carousel-img" alt="Actitud FIT">
+                <div class="carousel-caption-custom">
                   <h5>Actitud FIT!</h5>
                   <p>Transformá tu rutina en un estilo de vida.</p>
                 </div>
               </div>
-            </div>
-            <div class="carousel-item">
-              <div class="carousel-image-container">
-                <img src="./carrusel/AsistPerfecta.png" class="d-block w-100 carousel-img"
-                  alt="Premiacion a la disciplina" loading="lazy">
-                <div class="carousel-caption">
-                  <h5>Premiacion a la disciplina!</h5>
+              <div class="carousel-item">
+                <img src="./carrusel/AsistPerfecta.png" class="d-block w-100 carousel-img" alt="Premiación">
+                <div class="carousel-caption-custom">
+                  <h5>Premiación a la disciplina!</h5>
                   <p>Reconocemos tu constancia y esfuerzo.</p>
                 </div>
               </div>
-            </div>
-            <div class="carousel-item">
-              <div class="carousel-image-container">
-                <img src="./carrusel/primerclase.png" class="d-block w-100 carousel-img" alt="Primera clase gratis"
-                  loading="lazy">
-                <div class="carousel-caption">
+              <div class="carousel-item">
+                <img src="./carrusel/primerclase.png" class="d-block w-100 carousel-img" alt="Primera clase">
+                <div class="carousel-caption-custom">
                   <h5>Primera Clase Gratis</h5>
                   <p>¡Probá sin compromiso y descubrí tu lugar!</p>
                 </div>
               </div>
-            </div>
-            <div class="carousel-item">
-              <div class="carousel-image-container">
-                <img src="./carrusel/sociosactivos.png" class="d-block w-100 carousel-img" alt="Comunidad activa"
-                  loading="lazy">
-                <div class="carousel-caption">
+              <div class="carousel-item">
+                <img src="./carrusel/sociosactivos.png" class="d-block w-100 carousel-img" alt="Comunidad">
+                <div class="carousel-caption-custom">
                   <h5>Comunidad Activa</h5>
                   <p>Sumate a un equipo que te impulsa.</p>
                 </div>
               </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carruselImagenes" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carruselImagenes" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carruselImagenes" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carruselImagenes" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
         </div>
       </div>
     </section>
-
-
   </main>
 
-  <section id="disciplinas">
+  <section id="disciplinas" class="py-5 bg-gradient-disciplinas">
     <div class="container">
-      <div class="disciplinas-header">
-        <h2>Nuestras Disciplinas</h2>
-        <p>Más que ejercicios, nuestras disciplinas son espacios para crecer y superarte junto a una comunidad que te
-          acompaña.</p>
+      <div class="text-center mb-5 text-light">
+        <h2 class="display-4 fw-bold text-uppercase gradient-title">Nuestras Disciplinas</h2>
+        <p class="lead text-secondary">Más que ejercicios, nuestras disciplinas son espacios para crecer y superarte
+          junto a una comunidad que te acompaña.</p>
       </div>
 
-      <div class="row disciplinas-container">
+      <div class="row g-4 g-xl-5">
         <div class="col-lg-4 col-md-6">
-          <div class="discipline-card cardio">
+          <div class="discipline-card h-100 position-relative overflow-hidden rounded-4 shadow-lg">
             <img src="img/cardiox.jpg" alt="Cardio" class="discipline-bg-img">
-            <div class="discipline-content">
-              <div>
-                <div class="discipline-icon">
-                  <i class="fas fa-heartbeat"></i>
-                </div>
+            <div class="discipline-content p-4 p-md-5 d-flex flex-column justify-content-between text-light">
+              <div class="discipline-icon mb-3">
+                <i class="fas fa-heartbeat"></i>
               </div>
               <div>
                 <h3 class="discipline-title">Cardio</h3>
                 <div class="discipline-info">
-                  <p class="discipline-description">
-                    Quema calorías, mejora tu resistencia y fortalece tu corazón con nuestras rutinas cardiovasculares
-                    dinámicas.
-                  </p>
-                  <ul class="discipline-features">
-                    <li><i class="fas fa-check-circle"></i> Cintas y elípticas de última generación</li>
-                    <li><i class="fas fa-check-circle"></i> Clases de funcional</li>
-                    <li><i class="fas fa-check-circle"></i> Entrenamiento HIIT personalizado</li>
+                  <p class="discipline-description">Quema calorías, mejora tu resistencia y fortalece tu corazón con
+                    nuestras rutinas cardiovasculares dinámicas.</p>
+                  <ul class="discipline-features list-unstyled">
+                    <li><i class="fas fa-check-circle me-2"></i> Cintas y elípticas de última generación</li>
+                    <li><i class="fas fa-check-circle me-2"></i> Clases de funcional</li>
+                    <li><i class="fas fa-check-circle me-2"></i> Entrenamiento HIIT personalizado</li>
                   </ul>
                 </div>
               </div>
@@ -224,25 +205,21 @@
         </div>
 
         <div class="col-lg-4 col-md-6">
-          <div class="discipline-card musculacion">
+          <div class="discipline-card h-100 position-relative overflow-hidden rounded-4 shadow-lg">
             <img src="img/musculacion.jpg" alt="Musculación" class="discipline-bg-img">
-            <div class="discipline-content">
-              <div>
-                <div class="discipline-icon">
-                  <i class="fas fa-dumbbell"></i>
-                </div>
+            <div class="discipline-content p-4 p-md-5 d-flex flex-column justify-content-between text-light">
+              <div class="discipline-icon mb-3">
+                <i class="fas fa-dumbbell"></i>
               </div>
               <div>
                 <h3 class="discipline-title">Musculación</h3>
                 <div class="discipline-info">
-                  <p class="discipline-description">
-                    Desarrolla fuerza, tonifica y construye masa muscular con equipamiento profesional y asesoramiento
-                    experto.
-                  </p>
-                  <ul class="discipline-features">
-                    <li><i class="fas fa-check-circle"></i> Máquinas y pesas libres profesionales</li>
-                    <li><i class="fas fa-check-circle"></i> Planes de entrenamiento personalizados</li>
-                    <li><i class="fas fa-check-circle"></i> Instructores certificados disponibles</li>
+                  <p class="discipline-description">Desarrolla fuerza, tonifica y construye masa muscular con
+                    equipamiento profesional y asesoramiento experto.</p>
+                  <ul class="discipline-features list-unstyled">
+                    <li><i class="fas fa-check-circle me-2"></i> Máquinas y pesas libres profesionales</li>
+                    <li><i class="fas fa-check-circle me-2"></i> Planes de entrenamiento personalizados</li>
+                    <li><i class="fas fa-check-circle me-2"></i> Instructores certificados disponibles</li>
                   </ul>
                 </div>
               </div>
@@ -251,24 +228,21 @@
         </div>
 
         <div class="col-lg-4 col-md-6">
-          <div class="discipline-card clases">
+          <div class="discipline-card h-100 position-relative overflow-hidden rounded-4 shadow-lg">
             <img src="img/grupal.jpg" alt="Clases Grupales" class="discipline-bg-img">
-            <div class="discipline-content">
-              <div>
-                <div class="discipline-icon">
-                  <i class="fas fa-users"></i>
-                </div>
+            <div class="discipline-content p-4 p-md-5 d-flex flex-column justify-content-between text-light">
+              <div class="discipline-icon mb-3">
+                <i class="fas fa-users"></i>
               </div>
               <div>
                 <h3 class="discipline-title">Clases Grupales</h3>
                 <div class="discipline-info">
-                  <p class="discipline-description">
-                    Entrena con energía y motivación en grupo. Funcional, HIIT y más disciplinas para todos los niveles.
-                  </p>
-                  <ul class="discipline-features">
-                    <li><i class="fas fa-check-circle"></i> Variedad de horarios y disciplinas</li>
-                    <li><i class="fas fa-check-circle"></i> Instructores motivadores y profesionales</li>
-                    <li><i class="fas fa-check-circle"></i> Ambiente de comunidad y apoyo</li>
+                  <p class="discipline-description">Entrena con energía y motivación en grupo. Funcional, HIIT y más
+                    disciplinas para todos los niveles.</p>
+                  <ul class="discipline-features list-unstyled">
+                    <li><i class="fas fa-check-circle me-2"></i> Variedad de horarios y disciplinas</li>
+                    <li><i class="fas fa-check-circle me-2"></i> Instructores motivadores y profesionales</li>
+                    <li><i class="fas fa-check-circle me-2"></i> Ambiente de comunidad y apoyo</li>
                   </ul>
                 </div>
               </div>
