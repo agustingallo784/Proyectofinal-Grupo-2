@@ -8,7 +8,7 @@ html, body {
   overflow-x: hidden; 
 }
 .logo-img {
-  height: 85px;
+  height: 60px;
   transition: transform 0.5s ease;
 }
 .logo-img:hover { transform: scale(1.05); }
