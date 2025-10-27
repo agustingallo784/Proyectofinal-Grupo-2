@@ -8,6 +8,10 @@
   <meta name="keywords" content="HTML, CSS,JavaScript">
   <link rel="stylesheet" href="style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
   <link rel="icon" type="image" href="./img/logoflexgym.jpg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,149 +19,47 @@
 </head>
 
 <body>
-  <header class="header">
-    <div class="logo">
-      <img src="/img/logo.jpg" alt="Logo del gimnasio">
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+
+<section class="bg-custom">
+  <div class="container-fluid px-0">
+    <div class="row g-0 min-vh-100 align-items-center">
+      <div class="col-12 col-lg-5 order-1 p-4 p-md-5">
+        <div class="content-section">
+          <h1 class="text-warning mb-4 animate-slide-in" style="animation-delay: 0.3s;">
+            ¿POR QUÉ ELEGIRNOS?
+          </h1>
+          <h2 class="mb-4 animate-slide-in" style="animation-delay: 0.9s;">
+            Activa tu mejor versión<br>estamos listos para vos
+          </h2>
+          <p class="text-light mb-4 animate-slide-in" style="animation-delay: 1.5s;">
+            &nbsp;&nbsp;&nbsp;&nbsp;Nuestro enfoque emocional y nuestra instalación<br>
+            están pensadas para acompañarte en cada paso.<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;Creamos espacios que inspiran, motivan y te conectan con tu propósito.
+          </p>
+          <div class="animate-slide-up" style="animation-delay: 2.1s;">
+            <button class="btn btn-gold position-relative">
+              EMPEZÁ AHORA!
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-7 order-2 p-0">
+        <div class="video-box animate-slide-in-right" style="animation-delay: 2.7s;">
+          <video autoplay muted loop playsinline class="w-100 h-auto d-block">
+            <source src="video/FlexGym.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+          </video>
+        </div>
+      </div>
     </div>
-    <ul class="navbar">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Planes</a></li>
-      <li><a href="#">Servicios</a></li>
-      <li><a href="#">Nuestros clientes</a></li>
-      <li><a href="#">Redes</a></li>
-    </ul>
-    <a href="#" class="btn"><button>Probá tu primer clase gratis, hoy!</button></a>
-  </header>
+  </div>
+</section>
 
-
-    <section>
-        <form>
-            <h2>FORMULARIO</h2>
-
-            <label><strong>Nombre</strong></label><br>
-            <input type="text" name="nombre" placeholder="Ej. Nicolas"><br><br>
-
-            <label><strong>Correo</strong></label><br>
-            <input type="email" name="correo" placeholder="Ej.123@gmail.com"><br><br>
-
-            <label><strong>Escríbenos aquí</strong></label><br>
-            <textarea name="mensaje" rows="4" placeholder="Tu mensaje..."></textarea><br><br>
-
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
-
-
-    <section >
-      <h1>¿Por qué elegirnos?</h1>
-      <h2>Activa tu mejor versión, estamos listos para vos</h2>
-      <p>
-      Nuestro enfoque emocional y nuestra instalación <br>
-      están pensadas para acompañarte en cada paso. <br>
-      Creamos espacios que inspiran, motivan y te conectan con tu propósito.
-      </p>
-      <button>EMPEZA AHORA!</button>
-    </section>
-    
-    <figure>
-      <video autoplay muted loop>
-      <source src="video/v-gym.mp4" type="video/mp4">
-      </video>
-    </figure>
-
-  <section actividades>
-    <article>
-      <figure>
-        <img src="img/musculacion.jpg" alt="Musculación">
-        <figcaption>
-          <h3>Musculación</h3>
-          <a href="#">Ver más</a>
-        </figcaption>
-      </figure>
-    </article>
-
-    <article>
-      <figure>
-        <img src="img/cardio.jpg" alt="Cardio">
-        <figcaption>
-          <h3>Cardio</h3>
-          <a href="#">Ver más</a>
-        </figcaption>
-      </figure>
-    </article>
-
-    <article>
-      <figure>
-        <img src="img/grupal.jpg" alt="Clases grupales">
-        <figcaption>
-          <h3>Clases grupales</h3>
-          <a href="#">Ver más</a>
-        </figcaption>
-      </figure>
-    </article>
-  </section>
-
-
-  <section>
-    <h2>RESEÑAS</h2>
-    <article>
-      <img src="imgre/clasificacion.png" alt="Ícono de red social">
-      <h3>Nicolas</h3>
-      <p>“Excelente ambiente y entrenadores súper atentos.</p>
-      <p>¡Me siento motivado cada día!”</p>
-      <img src="imgre/Icono-insta.png" alt="Ícono de red social">
-    </article>
-
-    <article>
-      <img src="imgre/clasificacion.png" alt="Ícono de red social">
-      <h3>Roque</h3>
-      <p>Instalaciones impecables </p>
-      <p>rutinas bien personalizadas</p>
-      <img src="imgre/Icono-insta.png" alt="Ícono de red social">
-    </article>
-
-    <article>
-      <img src="imgre/clasificacion.png" alt="Ícono de red social">
-      <h3>Adolfo</h3>
-      <p>Recomendadísimo!</p>
-      <img src="imgre/Icono-insta.png" alt="Ícono de red social">
-    </article>
-  </section>
-
-  <footer>
-    <table width="100%">
-      <td width="30%" valign="top">
-        <a href="#">
-          <img src="imagen/WhatsApp Image 2025-09-24 at 10.34.09 AM.jpeg" alt="FLEX-GYM" width="200"><br>
-        </a>
-      </td>
-
-      <td width="30%" valign="top">
-        <h2>Ubicación</h2>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!4v1758736886507!6m8!1m7!1sRrBBxHYQ3OiL1SX_O-aQMgA!2m2!1d-27.43555055433153!2d-65.6170910152433!3f260.6053081960038!4f3.815034730287678!5f0.7820865974627469"
-          width="65%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-      </td>
-
-      <td width="20%" valign="top">
-        <h2>Contactanos</h2>
-        <p><img src="imagen/icons8-phone-48.png" alt="Celular" width="15%">Celular</p>
-        <p><img src="imagen/icons8-gmail-logo-50.png" alt="Gmail" width="15%">Gmail</p>
-      </td>
-      <td width="30%" valign="top">
-        <h2>Redes</h2>
-        <p><img src="imagen/icons8-facebook-logo-50.png" alt="Facebook" width="30">Facebook</p>
-        <p><img src="imagen/icons8-instagram-logo-48.png" alt="Instagram" width="30">Instagram</p>
-        <p> <img src="imagen/icons8-tiktok-48.png" alt="TikTok" width="30">TikTok</p>
-      </td>
-    </table>
-    <center>
-      <p>© 2025 copyright: grupo 2 Concepción, Tucumán, Argentina</p>
-    </center>
-  </footer>
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 
 
