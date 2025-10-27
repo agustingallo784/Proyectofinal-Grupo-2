@@ -53,77 +53,79 @@ html, body {
 .nav-link.active::after { width: 100%; }
 
 .bg-custom {
-  background: #1a1a1a !important;
+  background: #1a1a1a;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .bg-custom h1 {
-  font-family: 'Black Ops One', cursive !important;
-  font-size: clamp(1.5rem, 4vw, 2.6rem) !important;
-  text-shadow: 0 0 5px rgba(255, 215, 0, 0.3), 0 0 10px rgba(255, 215, 0, 0.2), 2px 2px 4px rgba(0, 0, 0, 0.8) !important;
-  letter-spacing: clamp(2px, 0.5vw, 3px) !important;
+  font-family: 'Black Ops One', cursive;
+  font-size: clamp(1.5rem, 4vw, 2.6rem);
+  text-shadow: 0 0 5px rgba(255, 215, 0, 0.3), 0 0 10px rgba(255, 215, 0, 0.2), 2px 2px 4px rgba(0, 0, 0, 0.8);
+  letter-spacing: clamp(2px, 0.5vw, 3px);
 }
 
 .bg-custom h2 {
-  font-family: 'Bebas Neue', sans-serif !important;
-  font-size: clamp(1.2rem, 4vw, 2.5rem) !important;
-  letter-spacing: 2px !important;
-  line-height: 1.3 !important;
-  color: #FFD700 !important;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8), 0 0 10px rgba(255, 215, 0, 0.3) !important;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(1.2rem, 4vw, 2.5rem);
+  letter-spacing: 2px;
+  line-height: 1.3;
+  color: #FFD700;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8), 0 0 10px rgba(255, 215, 0, 0.3);
 }
 
 .bg-custom p {
-  font-family: 'Origin Athletic', sans-serif !important;
-  font-size: clamp(0.85rem, 2.5vw, 1.3rem) !important;
-  line-height: clamp(1.6, 2vw, 1.9) !important;
-  letter-spacing: 1px !important;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7) !important;
+  font-family: 'Origin Athletic', sans-serif;
+  font-size: clamp(0.85rem, 2.5vw, 1.3rem);
+  line-height: clamp(1.6, 2vw, 1.9);
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
 
 .bg-custom .btn-gold {
-  background: linear-gradient(135deg, #ffd700 0%, #ffed4e 50%, #ffd700 100%) 0 0/200% 200% !important;
-  font-family: 'Black Ops One', cursive !important;
-  font-size: clamp(0.8rem, 2vw, 1.3rem) !important;
-  font-weight: bold !important;
-  padding: clamp(10px, 2.5vw, 18px) clamp(20px, 4vw, 45px) !important;
-  color: #000 !important;
-  border: 3px solid #ffd700 !important;
-  border-radius: 15px !important;
-  letter-spacing: 2px !important;
-  text-transform: uppercase !important;
-  cursor: pointer !important;
-  position: relative !important;
-  transition: all 0.3s ease !important;
-  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.5), 0 0 30px rgba(255, 215, 0, 0.3), inset 0 0 20px rgba(255, 255, 255, 0.2) !important;
+  background: linear-gradient(135deg, #ffd700 0%, #ffed4e 50%, #ffd700 100%) 0 0/200% 200%;
+  font-family: 'Black Ops One', cursive;
+  font-size: clamp(0.8rem, 2vw, 1.3rem);
+  font-weight: bold;
+  padding: clamp(10px, 2.5vw, 18px) clamp(20px, 4vw, 45px);
+  color: #000;
+  border: 3px solid #ffd700;
+  border-radius: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.5), 0 0 30px rgba(255, 215, 0, 0.3), inset 0 0 20px rgba(255, 255, 255, 0.2);
 }
 
 .bg-custom .btn-gold::before {
-  content: '' !important;
-  position: absolute !important;
-  inset: -4px !important;
-  background: linear-gradient(45deg, #ffd700, #ff6b00, #ffd700, #ff6b00) 0 0/300% 300% !important;
-  border-radius: 17px !important;
-  opacity: 0 !important;
-  z-index: -1 !important;
-  filter: blur(10px) !important;
-  transition: opacity 0.3s !important;
-  animation: neonPulse 2s infinite !important;
+  content: '';
+  position: absolute;
+  inset: -4px;
+  background: linear-gradient(45deg, #ffd700, #ff6b00, #ffd700, #ff6b00) 0 0/300% 300%;
+  border-radius: 17px;
+  opacity: 0;
+  z-index: -1;
+  filter: blur(10px);
+  transition: opacity 0.3s;
+  animation: neonPulse 2s infinite;
 }
 
 .bg-custom .btn-gold:hover::before {
-  opacity: 1 !important;
+  opacity: 1;
 }
 
 .bg-custom .btn-gold:hover {
-  background-position: 100% 0 !important;
-  transform: translateY(-5px) scale(1.05) !important;
-  border-color: #ff6b00 !important;
-  color: #000 !important;
-  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.7), 0 0 40px rgba(255, 215, 0, 0.8), 0 0 60px rgba(255, 107, 0, 0.5), inset 0 0 30px rgba(255, 255, 255, 0.3) !important;
+  background-position: 100% 0;
+  transform: translateY(-5px) scale(1.05);
+  border-color: #ff6b00;
+  color: #000;
+  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.7), 0 0 40px rgba(255, 215, 0, 0.8), 0 0 60px rgba(255, 107, 0, 0.5), inset 0 0 30px rgba(255, 255, 255, 0.3);
 }
 
 .bg-custom .video-box {
-  background: #1a1a1a !important;
+  background: #1a1a1a;
 }
 
 .bg-custom .animate-slide-in {
@@ -159,38 +161,25 @@ html, body {
 }
 
 @keyframes gradientShift {
-
-  0%,
-  100% {
+  0%, 100% {
     background-position: 0% 50%;
   }
-
   50% {
     background-position: 100% 50%;
   }
 }
 
 @keyframes neonPulse {
-
-  0%,
-  100% {
+  0%, 100% {
     background-position: 0% 50%;
     filter: blur(10px) brightness(1.2);
   }
-
   50% {
     background-position: 100% 50%;
     filter: blur(15px) brightness(1.5);
   }
 }
 
-.bg-custom {
-  margin-bottom: 0 !important;
-}
-
-#home {
-  padding-top: 0 !important;
-}
 .custom-btn {
   font-weight: 700;
   color: #000;
@@ -769,30 +758,30 @@ html, body {
 }
 
 .form-control {
-    background-color: #000000 !important;
-    border: 1px solid #333 !important;
+    background-color: #000000 ;
+    border: 1px solid #333 ;
     border-radius: 8px;
     padding: 14px 16px;
-    color: #fff !important;
+    color: #fff ;
     font-size: 14px;
     transition: all 0.3s ease;
 }
 
 .form-control::placeholder {
-    color: #555 !important;
+    color: #555 ;
 }
 
 .form-control:focus {
-    background-color: #0a0a0a !important;
-    border-color: #ffd700 !important;
-    color: #fff !important;
+    background-color: #0a0a0a ;
+    border-color: #ffd700 ;
+    color: #fff ;
     box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.1),
-        0 0 15px rgba(255, 215, 0, 0.2) !important;
+        0 0 15px rgba(255, 215, 0, 0.2) ;
     outline: none;
 }
 
 .form-control:hover {
-    border-color: #ffd700 !important;
+    border-color: #ffd700 ;
 }
 
 textarea.form-control {
