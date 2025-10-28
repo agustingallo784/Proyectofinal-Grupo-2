@@ -9,27 +9,41 @@
   <link rel="icon" type="image" href="./img/logoflexgym.jpg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FLEX FITNESS GYM</title>
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
 
-    <section>
+    <div class="modal-overlay"></div>
+
+<div class="modal-container">
+    <div class="form-card">
+        <button class="btn-close-modal" aria-label="Cerrar">×</button>
+
+        <h2 class="form-title">EMPEZA AHORA</h2>
+        <div class="title-line"></div>
+
         <form>
-            <h2>FORMULARIO</h2>
 
-            <label><strong>Nombre</strong></label><br>
-            <input type="text" name="nombre" placeholder="Ej. Nicolas"><br><br>
+            <div class="mb-custom">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Ej. Nicolas">
+            </div>
 
-            <label><strong>Correo</strong></label><br>
-            <input type="email" name="correo" placeholder="Ej.123@gmail.com"><br><br>
+            <div class="mb-custom">
+                <label for="correo" class="form-label">Correo</label>
+                <input type="email" class="form-control" id="correo" placeholder="Ej.123@gmail.com">
+            </div>
 
-            <label><strong>Escríbenos aquí</strong></label><br>
-            <textarea name="mensaje" rows="4" placeholder="Tu mensaje..."></textarea><br><br>
+            <div class="mb-custom">
+                <label for="mensaje" class="form-label">Escribenos aquí</label>
+                <textarea class="form-control" id="mensaje" placeholder="Tu mensaje..."></textarea>
+            </div>
 
-            <button type="submit">Enviar</button>
+            <button type="submit" class="btn-submit">Enviar</button>
         </form>
-    </section>
-
+    </div>
+</div>
 
 </body>
 
