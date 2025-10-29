@@ -1,5 +1,4 @@
 .modal-overlay {
-    display: none;
     position: fixed;
     inset: 0;
     background-color: rgba(0, 0, 0, 0.85);
@@ -8,7 +7,6 @@
 }
 
 .modal-container {
-    display: none;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -23,8 +21,7 @@
     border: 1px solid #2a2a2a;
     border-radius: 15px;
     padding: 45px 40px;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.9),
-        0 10px 30px rgba(255, 215, 0, 0.15);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.9), 0 10px 30px rgba(255, 215, 0, 0.15);
     position: relative;
 }
 
@@ -87,7 +84,7 @@
 }
 
 .form-control {
-    background-color: #000000 !important;
+    background-color: #000 !important;
     border: 1px solid #333 !important;
     border-radius: 8px;
     padding: 14px 16px;
@@ -100,17 +97,15 @@
     color: #555 !important;
 }
 
-.form-control:focus {
-    background-color: #0a0a0a !important;
-    border-color: #ffd700 !important;
-    color: #fff !important;
-    box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.1),
-        0 0 15px rgba(255, 215, 0, 0.2) !important;
-    outline: none;
-}
-
 .form-control:hover {
     border-color: #ffd700 !important;
+}
+
+.form-control:focus {
+    background-color: #000 !important;
+    border-color: #ffd700 !important;
+    box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.1), 0 0 15px rgba(255, 215, 0, 0.2) !important;
+    outline: none;
 }
 
 textarea.form-control {
@@ -150,64 +145,20 @@ textarea.form-control {
 }
 
 @media (max-width: 768px) {
-    .modal-container {
-        width: 95%;
-    }
-
-    .form-card {
-        padding: 40px 30px;
-    }
-
-    .form-title {
-        font-size: 24px;
-        margin-bottom: 8px;
-    }
-
-    .title-line {
-        width: 60px;
-        margin-bottom: 30px;
-    }
-
-    .form-control {
-        padding: 12px 14px;
-        font-size: 13px;
-    }
-
-    textarea.form-control {
-        min-height: 100px;
-    }
-
-    .btn-submit {
-        padding: 14px;
-        font-size: 14px;
-    }
+    .modal-container { width: 95%; }
+    .form-card { padding: 40px 30px; }
+    .form-title { font-size: 24px; margin-bottom: 8px; }
+    .title-line { width: 60px; margin-bottom: 30px; }
+    .form-control { padding: 12px 14px; font-size: 13px; }
+    textarea.form-control { min-height: 100px; }
+    .btn-submit { padding: 14px; font-size: 14px; }
 }
 
 @media (max-width: 480px) {
-    .form-card {
-        padding: 35px 25px;
-    }
-
-    .form-title {
-        font-size: 22px;
-        letter-spacing: 2px;
-    }
-
-    .title-line {
-        width: 50px;
-    }
-
-    .btn-close-modal {
-        top: 15px;
-        right: 15px;
-        font-size: 22px;
-    }
-
-    .form-label {
-        font-size: 13px;
-    }
-
-    .mb-custom {
-        margin-bottom: 18px;
-    }
+    .form-card { padding: 35px 25px; }
+    .form-title { font-size: 22px; letter-spacing: 2px; }
+    .title-line { width: 50px; }
+    .btn-close-modal { top: 15px; right: 15px; font-size: 22px; }
+    .form-label { font-size: 13px; }
+    .mb-custom { margin-bottom: 18px; }
 }
