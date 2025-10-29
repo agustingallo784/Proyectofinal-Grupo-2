@@ -220,7 +220,7 @@ html, body {
 }
 .carousel-img {
   height: 60vh;
-  object-fit: cover;
+  object-fit: scale-down;
   object-position: center;
   transition: transform 0.6s ease;
 }
