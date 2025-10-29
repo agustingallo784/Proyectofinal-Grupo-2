@@ -4,9 +4,7 @@
   font-weight: normal;
   font-style: normal;
 }
-html, body {
-  overflow-x: hidden; 
-}
+
 .logo-img {
   height: 60px;
   transition: transform 0.5s ease;
@@ -184,7 +182,7 @@ html, body {
   font-weight: 700;
   color: #000;
   background: linear-gradient(135deg, #D9A300, #FFD700);
-  padding: 12px 28px;
+  padding: 12px 20px;
   border-radius: 50px;
   text-decoration: none;
   display: inline-block;
