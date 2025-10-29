@@ -219,7 +219,7 @@ html, body {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 .carousel-img {
-  height: 60vh;
+  height: 75vh;
   object-fit: scale-down;
   object-position: center;
   transition: transform 0.6s ease;
