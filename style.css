@@ -1140,3 +1140,162 @@ textarea.form-control {
     margin-bottom: 18px;
   }
 }
+.modal-overlay {
+    position: none;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(8px);
+    z-index: 1040;
+}
+
+.modal-container {
+    position: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1050;
+    width: 90%;
+    max-width: 480px;
+}
+
+.form-card {
+    background-color: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    border-radius: 15px;
+    padding: 45px 40px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.9), 0 10px 30px rgba(255, 215, 0, 0.15);
+    position: relative;
+}
+
+.form-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #ffd700, transparent);
+    border-radius: 0 0 2px 2px;
+}
+
+.form-title {
+    color: #ffd700;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.title-line {
+    width: 80px;
+    height: 3px;
+    background-color: #ffd700;
+    margin: 0 auto 35px;
+}
+
+.btn-close-modal {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    background: transparent;
+    border: none;
+    color: #666;
+    font-size: 26px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    line-height: 1;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+}
+
+.btn-close-modal:hover {
+    color: #ffd700;
+    transform: rotate(90deg);
+}
+
+.form-label {
+    color: #ffd700;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.form-control, .form-select {
+    background-color: #000 !important;
+    border: 1px solid #333 !important;
+    border-radius: 8px;
+    padding: 14px 16px;
+    color: #fff !important;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.form-control::placeholder { color: #555 !important; }
+.form-control:hover, .form-select:hover { border-color: #ffd700 !important; }
+.form-control:focus, .form-select:focus {
+    background-color: #000 !important;
+    border-color: #ffd700 !important;
+    box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.1), 0 0 15px rgba(255, 215, 0, 0.2) !important;
+    outline: none;
+}
+
+.form-select {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23ffd700' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e") !important;
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    background-size: 16px 12px;
+}
+
+.form-select option {
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+.btn-submit {
+    background-color: #ffd700;
+    color: #0a0a0a;
+    border: none;
+    border-radius: 8px;
+    padding: 16px;
+    width: 100%;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 25px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 5px 20px rgba(255, 215, 0, 0.3);
+}
+
+.btn-submit:hover {
+    background-color: #ffed4e;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px rgba(255, 215, 0, 0.5);
+}
+
+.btn-submit:active { transform: translateY(-1px); }
+.mb-custom { margin-bottom: 22px; }
+
+@media (max-width: 768px) {
+    .modal-container { width: 95%; }
+    .form-card { padding: 40px 30px; }
+    .form-title { font-size: 24px; margin-bottom: 8px; }
+    .title-line { width: 60px; margin-bottom: 30px; }
+    .form-control, .form-select { padding: 12px 14px; font-size: 13px; }
+    .btn-submit { padding: 14px; font-size: 14px; }
+}
+
+@media (max-width: 480px) {
+    .form-card { padding: 35px 25px; }
+    .form-title { font-size: 22px; letter-spacing: 2px; }
+    .title-line { width: 50px; }
+    .btn-close-modal { top: 15px; right: 15px; font-size: 22px; }
+    .form-label { font-size: 13px; }
+    .mb-custom { margin-bottom: 18px; }
+}
