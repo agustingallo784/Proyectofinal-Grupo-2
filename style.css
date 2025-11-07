@@ -341,18 +341,15 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, rgba(217, 163, 0, 0.1), rgba(28, 28, 28, 0.3));
   z-index: 1;
   transition: transform 0.5s ease;
 }
 
-.discipline-card:hover::before {
-  background: linear-gradient(135deg, rgba(217, 163, 0, 0.2), rgba(28, 28, 28, 0.5));
-}
+
 
 .discipline-card:hover {
   transform: translateY(-15px);
-  box-shadow: 0 25px 50px rgba(217, 163, 0, 0.3);
+  box-shadow: 0 25px 50px rgba(25, 19, 1, 0.3);
 }
 
 .discipline-bg-img {
@@ -363,15 +360,16 @@
   height: 100%;
   object-fit: cover;
   z-index: 0;
-  transition: transform 0.7s ease;
+  transition: transform 0.7s ease  opacity 0.7s ease;
 }
 
 .discipline-card:hover .discipline-bg-img {
   transform: scale(1.1);
+  opacity: 0.2;
 }
 
 .discipline-content {
-  z-index: 2;
+  z-index: 1;
 }
 
 .discipline-icon {
@@ -419,11 +417,12 @@
 }
 
 .discipline-description {
-  color: #eceff1;
-  font-size: 1.1rem;
+  color: #ffffff;
+  font-family: 'Origin Athletic';
+  src: url('./fonts/Origin Athletic TTF.ttf');
+  font-size: 1.2rem;
   line-height: 1.6;
   margin-bottom: 20px;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
 }
 
 .discipline-features li {
@@ -432,11 +431,10 @@
   margin-bottom: 10px;
   display: flex;
   align-items: center;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
 }
 
 .discipline-features i {
-  color: #D9A300;
+  color: #FFD700;
 }
 
 @media (max-width: 991.98px) {
@@ -890,8 +888,8 @@ html {
 
 .whatsapp-btn {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 30px;
+  right: 90px;
   background-color: #25d366;
   color: white;
   width: 60px;
