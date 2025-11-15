@@ -55,8 +55,7 @@
       </div>
     </div>
   </header>
-
-    <div class="modal-overlay"></div>
+<div class="modal-overlay"></div>
 
     <div class="modal-container">
         <div class="form-card">
@@ -65,48 +64,28 @@
             <h2 class="form-title">TU PRIMER CLASE</h2>
             <div class="title-line"></div>
 
-            <form id="formulario-flex">
+            <form>
 
                 <div class="mb-custom">
                     <label for="nombre" class="form-label">Nombre y Apellido</label>
-                    <input type="text" class="form-control" id="nombre" placeholder="Ej. Nicolás Pérez" required>
-                </div>
-
-                <div class="mb-custom">
-                    <label for="dni" class="form-label">DNI</label>
-                    <input type="text" class="form-control" id="dni" placeholder="Ej. 12345678" maxlength="8" required>
+                    <input type="text" class="form-control" id="nombre" placeholder="Ej. Nicolas">
                 </div>
 
                 <div class="mb-custom">
                     <label for="correo" class="form-label">Correo</label>
-                    <input type="email" class="form-control" id="correo" placeholder="Ej. ejemplo@gmail.com" required>
+                    <input type="email" class="form-control" id="correo" placeholder="Ej.123@gmail.com">
                 </div>
 
                 <div class="mb-custom">
-                    <label for="plan" class="form-label">Tipo de Plan</label>
-                    <select class="form-select" id="plan" required>
-                        <option value="" selected disabled>Selecciona un plan</option>
-                        <option value="mensual">Mensual</option>
-                        <option value="trimestral">Trimestral</option>
-                        <option value="anual">Anual</option>
-                    </select>
-                </div>
-
-                <div class="mb-custom">
-                    <label for="disciplina" class="form-label">Disciplina de Interés</label>
-                    <select class="form-select" id="disciplina" required>
-                        <option value="" selected disabled>Selecciona una disciplina</option>
-                        <option value="musculacion">Musculación</option>
-                        <option value="funcional">Funcional</option>
-                        <option value="hit-personalizado">HIT Personalizado</option>
-                    </select>
+                    <label for="mensaje" class="form-label">Escribenos aqui para coordinar tu primer clase</label>
+                    <textarea class="form-control" id="mensaje" placeholder="Tu mensaje..."></textarea>
                 </div>
 
                 <button type="submit" class="btn-submit">Enviar</button>
             </form>
         </div>
     </div>
-
+    
     <script src="script.js"></script>
 
 <section class="bg-custom bg-custom d-flex align-items-center min-vh-100 pt-5 pt-md-0">
