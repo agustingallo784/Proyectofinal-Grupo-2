@@ -56,40 +56,38 @@
     </div>
   </header>
 
-  <div class="modal-overlay" id="modalOverlay"></div>
 
-  <div class="modal-container" id="modalContainer">
-    <div class="form-card">
-      <button class="btn-close-modal" aria-label="Cerrar">×</button>
+ <div class="modal-container" id="modalContainer-clase">
+  <div class="form-card">
+    <button class="btn-close-modal" aria-label="Cerrar">×</button>
+    <h2 class="form-title">TU PRIMER CLASE</h2>
 
-      <h2 class="form-title">TU PRIMER CLASE</h2>
+    <form id="formulario-primer-clase" class="modal-form">
+      <div class="mb-custom">
+        <label for="nombre-clase" class="form-label">Nombre y Apellido</label>
+        <input type="text" class="form-control" id="nombre-clase" placeholder="Ej. Nicolas" required>
+      </div>
+      <div class="mb-custom">
+        <label for="correo-clase" class="form-label">Correo</label>
+        <input type="email" class="form-control" id="correo-clase" placeholder="Ej. 123@gmail.com" required>
+      </div>
+      <div class="mb-custom">
+        <label for="mensaje-clase" class="form-label">Escrbienos aquí para coordinar tu primer clase gratis.</label>
+        <textarea class="form-control" id="mensaje-clase" placeholder="Coordinemos tu clase gratis..." required></textarea>
+      </div>
+      <button type="submit" class="btn-submit">Enviar</button>
+    </form>
 
-      <form id="formulario-primer-clase">
-
-        <div class="mb-custom">
-          <label for="nombre" class="form-label">Nombre y Apellido</label>
-          <input type="text" class="form-control" id="nombre" placeholder="Ej. Nicolas" required>
-        </div>
-
-        <div class="mb-custom">
-          <label for="correo" class="form-label">Correo</label>
-          <input type="email" class="form-control" id="correo" placeholder="Ej. 123@gmail.com" required>
-        </div>
-
-        <div class="mb-custom">
-          <label for="mensaje" class="form-label">Escríbenos aquí para coordinar tu primer clase</label>
-          <textarea class="form-control" id="mensaje" placeholder="Tu mensaje..." required></textarea>
-        </div>
-
-        <button type="submit" class="btn-submit">Enviar</button>
-      </form>
+    <div class="success-message">
+      <div class="success-icon">✓</div>
+      <h3>¡Solicitud de primer clase recibida!</h3>
+      <p>En las próximas horas te contactaremos para coordinar tu primer clase gratis!. ¡Bienvenido a la familia FLEX!</p>
     </div>
   </div>
-
-  <script src="script.js"></script>
-
+</div>
+  
   <section class="bg-custom bg-custom d-flex align-items-center min-vh-100 pt-5 pt-md-0">
-    <div class="container-fluid px-0">
+    <div class="container-fluid px-0" id="home">
       <div class="row g-0 min-vh-100 align-items-center">
         <div class="col-12 col-lg-5 order-1 p-4 p-md-5">
           <div class="content-section">
@@ -123,55 +121,52 @@
     </div>
   </section>
 
-  <div class="modal-overlay" id="modalOverlay"></div>
+<div class="modal-container" id="modalContainer-empeza">
+  <div class="form-card">
+    <button class="btn-close-modal" aria-label="Cerrar">×</button>
+    <h2 class="form-title">EMPEZÁ AHORA</h2>
 
-  <div class="modal-container" id="modalContainer">
-    <div class="form-card">
-      <button class="btn-close-modal" aria-label="Cerrar">×</button>
+    <form id="formulario-flex" class="modal-form">
+      <div class="mb-custom">
+        <label for="nombre-flex" class="form-label">Nombre y Apellido</label>
+        <input type="text" class="form-control" id="nombre-flex" placeholder="Ej. Nicolás Pérez" required>
+      </div>
+      <div class="mb-custom">
+        <label for="dni-flex" class="form-label">DNI</label>
+        <input type="text" class="form-control" id="dni-flex" placeholder="Ej. 12345678" maxlength="8" required>
+      </div>
+      <div class="mb-custom">
+        <label for="correo-flex" class="form-label">Correo</label>
+        <input type="email" class="form-control" id="correo-flex" placeholder="Ej. ejemplo@gmail.com" required>
+      </div>
+      <div class="mb-custom">
+        <label for="plan-flex" class="form-label">Tipo de Plan</label>
+        <select class="form-select" id="plan-flex" required>
+          <option value="" selected disabled>Selecciona un plan</option>
+          <option>Mensual</option>
+          <option>Trimestral</option>
+          <option>Anual</option>
+        </select>
+      </div>
+      <div class="mb-custom">
+        <label for="disciplina-flex" class="form-label">Disciplina de Interés</label>
+        <select class="form-select" id="disciplina-flex" required>
+          <option value="" selected disabled>Selecciona una disciplina</option>
+          <option>Musculación</option>
+          <option>Funcional</option>
+          <option>HIT Personalizado</option>
+        </select>
+      </div>
+      <button type="submit" class="btn-submit">Enviar</button>
+    </form>
 
-      <h2 class="form-title">EMPEZA AHORA</h2>
-
-      <form id="formulario-flex">
-
-        <div class="mb-custom">
-          <label for="nombre" class="form-label">Nombre y Apellido</label>
-          <input type="text" class="form-control" id="nombre" placeholder="Ej. Nicolás Pérez" required>
-        </div>
-
-        <div class="mb-custom">
-          <label for="dni" class="form-label">DNI</label>
-          <input type="text" class="form-control" id="dni" placeholder="Ej. 12345678" maxlength="8" required>
-        </div>
-
-        <div class="mb-custom">
-          <label for="correo" class="form-label">Correo</label>
-          <input type="email" class="form-control" id="correo" placeholder="Ej. ejemplo@gmail.com" required>
-        </div>
-
-        <div class="mb-custom">
-          <label for="plan" class="form-label">Tipo de Plan</label>
-          <select class="form-select" id="plan" required>
-            <option value="" selected disabled>Selecciona un plan</option>
-            <option value="mensual">Mensual</option>
-            <option value="trimestral">Trimestral</option>
-            <option value="anual">Anual</option>
-          </select>
-        </div>
-
-        <div class="mb-custom">
-          <label for="disciplina" class="form-label">Disciplina de Interés</label>
-          <select class="form-select" id="disciplina" required>
-            <option value="" selected disabled>Selecciona una disciplina</option>
-            <option value="musculacion">Musculación</option>
-            <option value="funcional">Funcional</option>
-            <option value="hit-personalizado">HIT Personalizado</option>
-          </select>
-        </div>
-
-        <button type="submit" class="btn-submit">Enviar</button>
-      </form>
+    <div class="success-message">
+      <div class="success-icon">✓</div>
+      <h3>¡Solicitud recibida!</h3>
+      <p> Te esperamos para comenzar esta nueva experiencia juntos. ¡Bienvenido/a a flex!</p>
     </div>
   </div>
+</div>
 
   <main id="planes">
     <section class="hero-section py-5">
@@ -237,7 +232,7 @@
   </main>
 
   <section id="disciplinas" class="py-5 bg-gradient-disciplinas">
-    <div class="container">
+    <div class="container" id="servicios">
       <div class="text-center mb-5 text-light">
         <h2 class="display-4 fw-bold text-uppercase gradient-title">Nuestras Disciplinas</h2>
         <p class="lead text-secondary">Más que ejercicios, nuestras disciplinas son espacios para crecer y superarte
@@ -317,7 +312,7 @@
     </div>
   </section>
 
-  <section class="reviews-section">
+  <section class="reviews-section" id="clientes">
     <div class="container-fluid h-100 p-0">
       <div class="grey-container px-3 px-md-5 py-5 d-flex flex-column justify-content-center">
 
@@ -420,7 +415,7 @@
     <ion-icon name="logo-whatsapp"></ion-icon>
   </a>
 
-  <footer class="footer">
+  <footer class="footer" id="redes">
     <section class="footer-logo">
       <a href="#" class="logo-link">
         <img src="img/logosinfondo.png" alt="FLEX Fitness & Gym">
@@ -468,6 +463,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
+  <script src="script.js"></script>
 </body>
 
 

@@ -1134,32 +1134,55 @@ textarea.form-control {
     }
 }
 
-.modal-overlay,
-.modal-container {
-    display: none;
+modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(8px);
+  z-index: 1040;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
 }
 
-.modal-overlay.active,
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.7);
+  z-index: 1050;
+  width: 90%;
+  max-width: 460px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.2);
+}
+
 .modal-container.active {
-    display: block;
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+  visibility: visible;
 }
 
-.modal-overlay {
-    position: fixed;
-    inset: 0;
-    background-color: rgba(0, 0, 0, 0.85);
-    backdrop-filter: blur(8px);
-    z-index: 1040;
+/* Animación de salida */
+.modal-container.closing,
+.modal-overlay.closing {
+  transition: all 0.35s ease;
 }
 
-.modal-container {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1050;
-    width: 90%;
-    max-width: 460px;
+.modal-container.closing {
+  transform: translate(-50%, -50%) scale(0.7);
+  opacity: 0;
+}
+
+.modal-overlay.closing {
+  opacity: 0;
+  visibility: hidden;
 }
 
 .form-card {
@@ -1335,4 +1358,64 @@ textarea.form-control {
     .mb-custom { 
         margin-bottom: 18px; 
     }
+}
+.modal-form {
+  width: 100%;
+  transition: all 0.4s ease;
+}
+
+.success-message {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #1a1a1a;
+  border-radius: 15px;
+  padding: 40px 20px;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: all 0.4s ease;
+}
+
+.success-message.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.success-icon {
+  width: 90px;
+  height: 90px;
+  background: #25d366;
+  color: white;
+  border-radius: 50%;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+  animation: bounceIn 0.8s ease;
+}
+
+.success-message h3 {
+  color: #ffd700;
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0 0 15px;
+}
+
+.success-message p {
+  color: #ddd;
+  font-size: 16px;
+}
+
+@keyframes bounceIn {
+  0% { transform: scale(0.3); opacity: 0; }
+  50% { transform: scale(1.1); }
+  70% { transform: scale(0.9); }
+  100% { transform: scale(1); opacity: 1; }
 }
