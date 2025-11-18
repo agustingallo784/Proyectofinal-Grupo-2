@@ -1419,3 +1419,41 @@ modal-overlay {
   70% { transform: scale(0.9); }
   100% { transform: scale(1); opacity: 1; }
 }
+
+/* === CURSOR PERSONALIZADO === */
+@keyframes gentlePulse {
+  0%, 100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+}
+
+.custom-cursor {
+  position: fixed;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #FFEB3B;
+  pointer-events: none;
+  z-index: 99999;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s ease;
+  box-shadow: 0 0 15px rgba(255, 235, 59, 0.8);
+}
+
+/* Ocultar cursor normal */
+.review-card:hover,
+.discipline-card:hover,
+.carousel-item:hover,
+.nav-link:hover,
+.custom-btn:hover,
+.btn-gold:hover,
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  cursor: none;
+}
