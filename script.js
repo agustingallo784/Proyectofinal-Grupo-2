@@ -162,4 +162,3 @@ document.getElementById('formulario-flex')?.addEventListener('submit', handleSub
     customCursor.style.left = e.clientX + 'px';
     customCursor.style.top = e.clientY + 'px';
   });
-});
